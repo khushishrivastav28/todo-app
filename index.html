@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-slate-100 min-h-screen py-10 px-4">
 
     <div class=" bg-white max-w-md mx-auto rounded-2xl shadow-lg overflow-hidden border border-slate-200 ">
@@ -16,7 +17,8 @@
         <form id="todo-form" action="" class="flex flex-col mb-6">
             <div class="flex gap-5 mb-1">        
                 <input id="todo-input" placeholder="Enter task description..." 
-                        class="border flex-1 border-black" p-2 type="text">
+                        class="border flex-1 rounded-lg p-2 border-slate-300 px-4 focus:outline-none focus:ring-2" 
+                        type="text">
                 <button id="form-btn" 
                         class="px-5 py-2 text-white font-medium rounded-lg cursor-pointer bg-indigo-500 hover:bg-indigo-600 ">Add</button>
             </div>

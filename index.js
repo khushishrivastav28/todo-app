@@ -5,7 +5,7 @@ const todoList = document.querySelector("#todo-list")
 const formBtn = document.querySelector("#form-btn")
 const taskCount = document.querySelector("#task-count")
 const completeCount = document.querySelector("#complete-count")
-const cancelBtn = document.querySelector("#cancle-btn");
+const cancelBtn = document.querySelector("#cancel-btn");
 
 
 let todos =JSON.parse(localStorage.getItem("todos")) || [];
@@ -107,7 +107,7 @@ todoList.addEventListener('click' , (e) =>{
     }
 })
    function deleteTodo(id){
-
+    
         todos = todos.filter((todo) => {
             if(todo.id !== Number(id)) {
                 return todo
@@ -130,7 +130,7 @@ function startEdit(id){
         formBtn.className =
         "px-5 py-2 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-lg transition-colors cursor-pointer";
 
-        cancelBtn.classList.reomve("hidden");
+        cancelBtn.classList.remove("hidden");
 }
     
     function cancelEdit() {
@@ -140,7 +140,7 @@ function startEdit(id){
 
         formBtn.textContent ="Add";
 
-        formBtn.classname =
+        formBtn.className =
         "px-5 py-2 bg-indigo-600 "
 
         cancelBtn.classList.add("hidden");

@@ -5,6 +5,7 @@ const todoList = document.querySelector("#todo-list")
 const formBtn = document.querySelector("#form-btn")
 const taskCount = document.querySelector("#task-count")
 const completeCount = document.querySelector("#complete-count")
+const cancelBtn = document.querySelector("#cancle-btn");
 
 
 let todos =JSON.parse(localStorage.getItem("todos")) || [];
